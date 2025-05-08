@@ -56,14 +56,14 @@ namespace TransactionProcessor
                     {
                         if (transactionType == "deposit")
                         {
-                            Transaction deposit = new Transaction(quantity, TransactionType.Deposit);
+                            Transaction deposit = new Transaction(quantity, TransactionType.deposit);
                             transfers.Add(deposit);
                             Console.WriteLine($"A deposit of {quantity} has been done.");
                             continue;
                         }
                         else if (transactionType == "withdraw")
                         {
-                            Transaction withdraw = new Transaction(quantity, TransactionType.Withdraw);
+                            Transaction withdraw = new Transaction(quantity, TransactionType.withdraw);
                             transfers.Add(withdraw);
                             Console.WriteLine($"A withdraw of {quantity} has been done.");
                             continue;
